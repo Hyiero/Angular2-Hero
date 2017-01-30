@@ -1,6 +1,6 @@
-# Angular 2 & Webpack 2 Seed Project using Travis for CI
+# Angular 2 Hero Tutorial
 
-## This is a front end Seed project for Angular 2
+## This is a front end tutorial with Angular 2 and Typescript
 
 ## Commands:
 1. **npm start** - This is for local development. It will bundle the app and turn on the webpack-dev-server and also enable hot module replacement
