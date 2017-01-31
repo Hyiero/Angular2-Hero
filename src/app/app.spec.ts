@@ -15,40 +15,15 @@ describe('App: ', function() {
            });
        });
 
-       it('should have a title', function() {
+        it('should have app component be defined',function(){
            //Arrange
-           var component = TestBed.createComponent(AppComponent);
-
+           var component = TestBed.createComponent(AppComponent); //Creates an instance of our component
+           
            //Act
-           component.detectChanges();
+           component.detectChanges(); //Digest our component and any actions commited before this
 
            //Assert
-           expect(component.debugElement.componentInstance.title).toBeDefined();
+           expect(component.debugElement.componentInstance).toBeDefined();
        });
-
-       it('should change the title to newTitle',function(){
-           //Arrange
-           var component = TestBed.createComponent(AppComponent);
-
-           //Act
-           component.debugElement.componentInstance.setNewTitle('Hello');
-           component.debugElement.componentInstance.updateTitle();
-           component.detectChanges();
-
-           //Assert
-           expect(component.debugElement.componentInstance.title).toBe('Hello');
-       });
-
-       it('should update the slider value',function(){
-           //Arrange
-           var component = TestBed.createComponent(AppComponent);
-
-           //Act
-           component.debugElement.componentInstance.updateSliderValue(2);
-           component.detectChanges();
-
-           //Assert
-           expect(component.debugElement.componentInstance.sliderValue).toBe(2);
-       })
    })
 });
